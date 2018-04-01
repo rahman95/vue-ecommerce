@@ -9,14 +9,17 @@
         <b-navbar-nav class="ml-auto">
           <li class="nav-item">
             <router-link to="/cart" class="nav-link">
-              <i class="fa fa-shopping-basket" aria-hidden="true"></i>  My Basket
+              <i class="fa fa-shopping-basket" aria-hidden="true"></i> My Basket
             </router-link>
           </li>
-          <li class="nav-item">
-            <router-link to="/admin" class="nav-link">
-              <i class="fa fa-cogs" aria-hidden="true"></i> Admin
+          <b-nav-item-dropdown text="Admin" right>
+            <router-link to="/admin/create" role="menuitem" target="_self" class="dropdown-item">
+              <i class="fa fa-plus" aria-hidden="true"></i> Add
             </router-link>
-          </li>
+            <router-link to="/admin/list" role="menuitem" target="_self" class="dropdown-item">
+              <i class="fa fa-list" aria-hidden="true"></i> List
+            </router-link>
+          </b-nav-item-dropdown>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>

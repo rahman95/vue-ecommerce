@@ -17,6 +17,7 @@
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
     "vue": "^2.5.2",
+    "vue-headful": "^1.1.0",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {

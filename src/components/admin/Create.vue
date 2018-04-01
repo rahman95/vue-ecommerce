@@ -8,10 +8,10 @@
 
 <script>
   export default {
-    name: 'Admin',
+    name: 'Create',
     data () {
       return {
-        msg: 'Welcome to the Admin Page'
+        msg: 'Welcome to the Admin Create Page'
       }
     }
   }
