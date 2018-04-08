@@ -6,7 +6,7 @@ import Cart from '@/components/Cart';
 // Admin Components
 import Index from '@/components/admin/Index';
 import Create from '@/components/admin/Create';
-import Delete from '@/components/admin/Delete';
+import Products from '@/components/admin/Products';
 import Edit from '@/components/admin/Edit';
 
 Vue.use(Router);
@@ -29,14 +29,14 @@ export default new Router({
       component: Index,
       children: [
         {
+          path: 'list',
+          name: 'Products',
+          component: Products,
+        },
+        {
           path: 'create',
           name: 'Create',
           component: Create,
-        },
-        {
-          path: 'delete',
-          name: 'Delte',
-          component: Delete,
         },
         {
           path: 'edit/:id',

@@ -8,10 +8,10 @@
 
 <script>
   export default {
-    name: 'Delete',
+    name: 'Products',
     data () {
       return {
-        msg: 'Welcome to the Admin Delete Page'
+        msg: 'Welcome to the Admin products Page'
       }
     }
   }
